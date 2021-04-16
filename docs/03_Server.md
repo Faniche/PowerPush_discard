@@ -2,9 +2,25 @@
 
 ## 传输模块
 
-receive_from_client
+Transmission
 
-send_to_client
+private:
+
++ socketFd
++ serverInfo
+
+public:
+
++ Constructor: 
+  + Transmission
++ function: 
+  + setServerInfo
+  + receive_from_client
+  + send_to_client
+
+
+
+
 
 ## 加密解密模块
 

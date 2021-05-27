@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/powerpush_server.dir/main.cpp.o CMakeFiles/powerpush_server.dir/Transmission.cpp.o CMakeFiles/powerpush_server.dir/Message.cpp.o CMakeFiles/powerpush_server.dir/Config.cpp.o CMakeFiles/powerpush_server.dir/Cipher.cpp.o CMakeFiles/powerpush_server.dir/Buffer.cpp.o -o powerpush_server  -lzlog -ldl -ljson-c -ldl -lpthread -ldl -ljson-c -lpthread 

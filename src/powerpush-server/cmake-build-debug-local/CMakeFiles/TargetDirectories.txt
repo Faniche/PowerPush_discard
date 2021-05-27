@@ -1,0 +1,3 @@
+/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/CMakeFiles/rebuild_cache.dir
+/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/CMakeFiles/edit_cache.dir
+/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/CMakeFiles/powerpush_server.dir

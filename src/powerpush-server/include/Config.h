@@ -33,12 +33,43 @@ private:
 
     zlog_category_t *log;
 
-    void readConfig();
+    in_port_t udpPort;
+
+    in_port_t tcpPort;
+
+    void readConfig(const std::string& confFilePath);
 
 
 public:
+    Config();
+
     Config(const std::string& confFilePath, zlog_category_t *log);
 
+    json_object *getParsedJson() const;
+
+    void setParsedJson(json_object *parsedJson);
+
+    [[nodiscard]] const std::vector<struct GroupItem> &getGroupList() const;
+
+    void setGroupList(const std::vector<struct GroupItem> &groupList);
+
+    [[nodiscard]] const std::vector<struct DeviceListItem> &getDeviceList() const;
+
+    void setDeviceList(const std::vector<struct DeviceListItem> &deviceList);
+
+    [[nodiscard]] const std::vector<struct ClipboardListItem> &getClipboardContentList() const;
+
+    void setClipboardContentList(const std::vector<struct ClipboardListItem> &clipboardContentList);
+
+    void setLog(zlog_category_t *log);
+
+    [[nodiscard]] in_port_t getUdpPort() const;
+
+    void setUdpPort(in_port_t udpPort);
+
+    [[nodiscard]] in_port_t getTcpPort() const;
+
+    void setTcpPort(in_port_t tcpPort);
 
 };
 

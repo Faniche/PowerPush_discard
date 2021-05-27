@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Huawei (8d0b1a67-2de9-48b2-b3fa-f347bd6ef2e8)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/faniche/PowerPush" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-huawei" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-local" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

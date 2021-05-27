@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="powerpush_server"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="powerpush_server">
+				<Option output="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/powerpush_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 powerpush_server"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="powerpush_server/fast">
+				<Option output="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/powerpush_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 powerpush_server/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/Buffer.cpp">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/Cipher.cpp">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/Config.cpp">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/Message.cpp">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/Transmission.cpp">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/include/Buffer.h">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/include/Cipher.h">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/include/Config.h">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/include/Message.h">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/include/Transmission.h">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/include/env.h">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/include/type.h">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/main.cpp">
+			<Option target="powerpush_server"/>
+		</Unit>
+		<Unit filename="/home/faniche/OpenSourceProjects/PowerPush/src/powerpush-server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

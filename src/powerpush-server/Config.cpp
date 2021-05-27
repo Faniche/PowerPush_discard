@@ -4,10 +4,8 @@
 
 #include "include/Config.h"
 
-/* Public */
-Config::Config(const std::string& confFilePath, zlog_category_t *log) {
-    this->log = log;
-    zlog_debug(this->log, "Config path: %s", confFilePath.c_str());
+
+void Config::readConfig(const std::string& confFilePath) {
     parsed_json = json_object_from_file(confFilePath.c_str());
     struct json_object_iterator it, itEnd;
     this->jgroupList = json_object_object_get(parsed_json, "groups");
@@ -60,6 +58,72 @@ Config::Config(const std::string& confFilePath, zlog_category_t *log) {
             json_object_iter_next(&it);
         }
     }
-    zlog_debug(this->log, "test");
+
+    this->udpPort = json_object_get_int(json_object_object_get(parsed_json, "udp_port"));
+    this->tcpPort = json_object_get_int(json_object_object_get(parsed_json, "tcp_port"));
 }
+
+/* Public */
+/* If use the no params constructor, must set log manually */
+Config::Config() {
+    readConfig(CONF_FILE_PATH);
+}
+
+Config::Config(const std::string& confFilePath, zlog_category_t *log) {
+    this->log = log;
+    readConfig(confFilePath);
+}
+
+json_object *Config::getParsedJson() const {
+    return parsed_json;
+}
+
+void Config::setParsedJson(json_object *parsedJson) {
+    parsed_json = parsedJson;
+}
+
+const std::vector<struct GroupItem> &Config::getGroupList() const {
+    return groupList;
+}
+
+void Config::setGroupList(const std::vector<struct GroupItem> &groupList) {
+    Config::groupList = groupList;
+}
+
+const std::vector<struct DeviceListItem> &Config::getDeviceList() const {
+    return deviceList;
+}
+
+void Config::setDeviceList(const std::vector<struct DeviceListItem> &deviceList) {
+    Config::deviceList = deviceList;
+}
+
+const std::vector<struct ClipboardListItem> &Config::getClipboardContentList() const {
+    return clipboardContentList;
+}
+
+void Config::setClipboardContentList(const std::vector<struct ClipboardListItem> &clipboardContentList) {
+    Config::clipboardContentList = clipboardContentList;
+}
+
+in_port_t Config::getUdpPort() const {
+    return udpPort;
+}
+
+void Config::setUdpPort(in_port_t udpPort) {
+    Config::udpPort = udpPort;
+}
+
+in_port_t Config::getTcpPort() const {
+    return tcpPort;
+}
+
+void Config::setTcpPort(in_port_t tcpPort) {
+    Config::tcpPort = tcpPort;
+}
+
+void Config::setLog(zlog_category_t *log) {
+    Config::log = log;
+}
+
 

@@ -1,6 +1,6 @@
 #include <iostream>
-#include <thread>
 #include <cstring>
+#include <queue>
 #include "zlog.h"
 #include "include/Transmission.h"
 #include "include/Config.h"
@@ -18,16 +18,29 @@ int main() {
         zlog_fini();
     }
 
+    std::queue<Message> rcvMsgQueue;
+    std::queue<Message> sndMsgQueue;
+//    Message message(log);
+//    message.setDeviceId("11");
+//    message.setGroupId("ss");
+//    message.setGroupToken("aa");
+//    message.setMessageType(1);
+//    message.setPayload("aa");
+//    rcvMsgQueue.push(message);
+//    sndMsgQueue.push(message);
+
+
     Config config(CONF_FILE_PATH, log);
 
+    Cipher cipher;
 
-//    Transmission transmission(log);
-//    transmission.initSocket();
+    Transmission transmission(log, cipher, config, rcvMsgQueue, sndMsgQueue);
+    transmission.initSocket();
 //    transmission.rcvDataTCP();
-//    transmission.rcvDataUDP();
-//    std::string clipContent;
-//    clip::get_text(clipContent);
-//    std::cout << clipContent << std::endl;
+    transmission.rcvDataUDP();
+
+    std::string msg = transmission.getMsg();
+    msg = cipher.decrypt(msg);
 
 
     return 0;

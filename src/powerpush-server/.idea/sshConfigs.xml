@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig connectionConfig="{&quot;serverAliveInterval&quot;:60}" host="121.36.66.5" id="ebea979d-2da5-4959-a1e3-8d78a6675777" keyPath="$USER_HOME$/.ssh/huawei-cloud-rsa" port="22" nameFormat="DESCRIPTIVE" username="faniche" />
+    </configs>
+  </component>
+</project>

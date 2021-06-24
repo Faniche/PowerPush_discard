@@ -20,6 +20,7 @@ private:
     std::string groupToken;
     int messageType;
     std::string payload;
+    uint16_t msgLen;
 
 public:
     explicit Message();

@@ -21,16 +21,13 @@ void Transmission::clipThreadFun() {
         }
         newMsg = std::string((char *) this->udpBuffer);
         zlog_debug(this->log, "New clipboard content, %s", newMsg.c_str());
-        if (newMsg == oldMsg) {
-//                zlog_debug(this->log, "New clipboard content, %s", newMsg.c_str());
-            memset(this->udpBuffer, 0, MSG_LEN);
-            usleep(10);
-            continue;
+        if (newMsg != oldMsg) {
+            oldMsg = newMsg;
+            // Decrypt the message and add the message to received queue.
+            setUdpMsg(newMsg);
         }
-        oldMsg = newMsg;
-        setUdpMsg(newMsg);
         memset(this->udpBuffer, 0, MSG_LEN);
-        usleep(10);
+        sleep(1);
     }
 }
 
